@@ -121,6 +121,36 @@ p {
   }
 }
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: rotate(45deg) translateY(15rem);
+            transform: rotate(45deg) translateY(15rem);
+  }
+  100% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: rotate(45deg) translateY(15rem);
+            transform: rotate(45deg) translateY(15rem);
+  }
+  100% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 1;
+  }
+}
+
 .section-header {
   height: 90vh;
   position: relative;
@@ -266,8 +296,23 @@ p {
   margin-top: -1rem;
 }
 
+.section-header .hero .plantita {
+  position: absolute;
+  width: 47rem;
+  left: -13rem;
+  bottom: -26rem;
+  -webkit-filter: drop-shadow(3px 16px 5px #88888875);
+          filter: drop-shadow(3px 16px 5px #88888875);
+  -webkit-animation: appear 2s forwards;
+          animation: appear 2s forwards;
+  opacity: 0;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 .section-info {
-  height: 600px;
-  margin-top: 20rem;
+  margin: 20rem 0;
+  width: 60%;
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
