@@ -75,7 +75,7 @@
             & img {
                 position: absolute;
                 top: 12rem;
-                width: 77px;
+                width: 7.7rem;
                 left: 55rem;
                 opacity: 0;
                 animation: planta 1s forwards;
@@ -84,10 +84,10 @@
             &:before {
                 content: "Nature at home with";
                 color: $secondary-green;
-                font-size: 20px;
+                font-size: 2rem;
                 position: absolute;
-                top: 38px;
-                right: 200px;
+                top: 3.8rem;
+                right: 20rem;
                 font-weight: normal;
             }
         }
@@ -96,7 +96,7 @@
             width: 60rem;
             line-height: 2.9rem;
             text-align: center;
-            font-size: 19px;
+            font-size: 1.9rem;
             margin-top: -1rem;
         }
     }
