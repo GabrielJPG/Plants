@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+}
+
+.main {
+  padding: 5rem 10rem;
+  overflow: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+@-webkit-keyframes fromLeft {
+  0% {
+    left: -30rem;
+    top: -65rem;
+    opacity: 0;
+  }
+  80% {
+    left: -10rem;
+    top: -10rem;
+    opacity: 1;
+  }
+  90% {
+    top: -10rem;
+  }
+  100% {
+    top: -12rem;
+  }
+}
+
+@keyframes fromLeft {
+  0% {
+    left: -30rem;
+    top: -65rem;
+    opacity: 0;
+  }
+  80% {
+    left: -10rem;
+    top: -10rem;
+    opacity: 1;
+  }
+  90% {
+    top: -10rem;
+  }
+  100% {
+    top: -12rem;
+  }
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    left: 10rem;
+    top: 65rem;
+    opacity: 0;
+  }
+  100% {
+    left: -10rem;
+    top: -10rem;
+    opacity: 1;
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    left: 10rem;
+    top: 65rem;
+    opacity: 0;
+  }
+  100% {
+    left: -10rem;
+    top: -10rem;
+    opacity: 1;
+  }
+}
+
+.section-header {
+  height: 90vh;
+  position: relative;
+}
+
+.section-header .bg-darkGreen,
+.section-header .bg-lightGreen {
+  background-color: #689159;
+  width: calc(100vw + 10rem);
+  height: 90vh;
+  position: absolute;
+  top: -10rem;
+  left: -10rem;
+}
+
+.section-header .bg-darkGreen {
+  background-color: #689159;
+  -webkit-transform: skewY(-18deg);
+          transform: skewY(-18deg);
+  -webkit-animation: fromLeft 2s forwards;
+          animation: fromLeft 2s forwards;
+}
+
+.section-header .bg-lightGreen {
+  background-color: #cedcab;
+  -webkit-transform: skewY(18deg);
+          transform: skewY(18deg);
+  z-index: -1;
+  -webkit-animation: fromRight 2s forwards;
+          animation: fromRight 2s forwards;
+}
+
+.section-header .content {
+  position: relative;
+  z-index: 1;
+}
+
+.section-header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-header .navigation .logo {
+  width: 6.5rem;
+}
+
+.section-header .navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section-header .navigation ul .item {
+  color: white;
+  position: relative;
+  font-size: 13px;
+  padding: 0 .7rem;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.section-header .navigation ul .item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #cedcab;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.section-header .navigation ul .item:hover:after {
+  width: 100%;
+}
+
+.section-header .hero {
+  height: 100%;
+  padding: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-header .hero .heading {
+  text-align: center;
+  font-size: 18.5rem;
+  font-weight: 700;
+  color: white;
+  position: relative;
+}
+
+.section-header .hero .heading:before {
+  content: "Nature at home with";
+  color: #cedcab;
+  font-size: 20px;
+  position: absolute;
+  top: 38px;
+  right: 200px;
+  font-weight: normal;
+}
+
+.section-header .hero .sub-heading {
+  color: white;
+  width: 60rem;
+  line-height: 2.9rem;
+  text-align: center;
+  font-size: 19px;
+  margin-top: -1rem;
+}
+/*# sourceMappingURL=style.css.map */

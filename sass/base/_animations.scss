@@ -1,0 +1,31 @@
+@keyframes fromLeft {
+    0% {
+        left: -30rem;
+        top: -65rem;
+        opacity: 0;
+    }
+    80% {
+        left: -10rem;
+        top: -10rem;
+        opacity: 1;
+    }
+    90% {
+        top: -10rem;
+    }
+    100% {
+        top: -12rem;
+    }
+}
+
+@keyframes fromRight {
+    0% {
+        left: 10rem;
+        top: 65rem;
+        opacity: 0;
+    }
+    100% {
+        left: -10rem;
+        top: -10rem;
+        opacity: 1;
+    }
+}

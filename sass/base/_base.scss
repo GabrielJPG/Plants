@@ -1,0 +1,28 @@
+// VARIABLES
+$primary-green: #689159;
+$secondary-green: #cedcab;
+$dark-black: #2D415D;
+$light-black: #556370;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.main {
+    padding: 5rem 10rem;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+}

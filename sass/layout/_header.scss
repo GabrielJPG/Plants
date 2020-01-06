@@ -1,0 +1,94 @@
+.section-header {
+    height: 90vh;
+    position: relative;
+    & .bg-darkGreen,
+    & .bg-lightGreen {
+        background-color: $primary-green;
+        width: calc(100vw + 10rem);
+        height: 90vh;
+        position: absolute;
+        top: -10rem;
+        left: -10rem;
+    }
+    & .bg-darkGreen {
+        background-color: $primary-green;
+        transform: skewY(-18deg);
+        animation: fromLeft 2s forwards;
+    }
+    & .bg-lightGreen {
+        background-color: $secondary-green;
+        transform: skewY(18deg);
+        z-index: -1;
+        animation: fromRight 2s forwards;
+    }
+    & .content {
+        position: relative;
+        z-index: 1;
+    }
+    & .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .logo {
+            width: 6.5rem;
+        }
+        & ul {
+            display: flex;
+            width: 65%;
+            justify-content: space-evenly;
+            & .item {
+                color: white;
+                position: relative;
+                font-size: 13px;
+                padding: 0 .7rem;
+                padding-bottom: 5px;
+                cursor: pointer;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 0%;
+                    height: 2px;
+                    background-color: #cedcab;
+                    transition: all .3s;
+                }
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    & .hero {
+        height: 100%;
+        padding: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & .heading {
+            text-align: center;
+            font-size: 18.5rem;
+            font-weight: 700;
+            color: white;
+            position: relative;
+            &:before {
+                content: "Nature at home with";
+                color: $secondary-green;
+                font-size: 20px;
+                position: absolute;
+                top: 38px;
+                right: 200px;
+                font-weight: normal;
+            }
+        }
+        & .sub-heading {
+            color: white;
+            width: 60rem;
+            line-height: 2.9rem;
+            text-align: center;
+            font-size: 19px;
+            margin-top: -1rem;
+        }
+    }
+}
