@@ -29,3 +29,14 @@
         opacity: 1;
     }
 }
+
+@keyframes planta {
+    0% {
+        left: 55rem;
+        opacity: 0;
+    }
+    100% {
+        left: 60rem;
+        opacity: 1;
+    }
+}

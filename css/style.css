@@ -87,6 +87,28 @@ li {
   }
 }
 
+@-webkit-keyframes planta {
+  0% {
+    left: 55rem;
+    opacity: 0;
+  }
+  100% {
+    left: 60rem;
+    opacity: 1;
+  }
+}
+
+@keyframes planta {
+  0% {
+    left: 55rem;
+    opacity: 0;
+  }
+  100% {
+    left: 60rem;
+    opacity: 1;
+  }
+}
+
 .section-header {
   height: 90vh;
   position: relative;
@@ -201,6 +223,18 @@ li {
   position: relative;
 }
 
+.section-header .hero .heading img {
+  position: absolute;
+  top: 12rem;
+  width: 77px;
+  left: 55rem;
+  opacity: 0;
+  -webkit-animation: planta 1s forwards;
+          animation: planta 1s forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
 .section-header .hero .heading:before {
   content: "Nature at home with";
   color: #cedcab;
@@ -218,5 +252,9 @@ li {
   text-align: center;
   font-size: 19px;
   margin-top: -1rem;
+}
+
+.section-info {
+  height: 600px;
 }
 /*# sourceMappingURL=style.css.map */
